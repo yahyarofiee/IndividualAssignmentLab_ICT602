@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#4584A0"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Dividend Calculator"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <EditText
+                android:id="@+id/investedAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Invested Fund Amount (RM)"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/dividendRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Annual Dividend Rate (%)"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/monthsInvested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Months (Max 12)"
+                android:inputType="number"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#4584A0" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--Calculation--"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Dividend"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Invested x Dividend / Months invested"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Dividend"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Dividend x Months invested"
+                android:textSize="18sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>
