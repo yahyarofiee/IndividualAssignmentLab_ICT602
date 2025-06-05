@@ -24,9 +24,16 @@ This is a mobile Android application developed in Java using Android Studio for 
 
 ## 📸 Screenshots
 
-| Home Screen | Calculation Page | About Page |
-|-------------|------------------|-------------|
-| ![Home](screenshots/home.png) | ![Calculate](screenshots/calculate.png) | ![About](screenshots/about.png) |
+| Home Screen | 
+| ![Home](screenshots/home.png) |
+
+|-------------|
+| Calculation Page | 
+| ![Calculate](screenshots/calculate.png) |
+
+|-------------|
+| About Page |
+|![About](screenshots/about.png) |
 
 
 ## 🧑‍💻 Author
