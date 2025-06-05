@@ -24,16 +24,15 @@ This is a mobile Android application developed in Java using Android Studio for 
 
 ## 📸 Screenshots
 
-| Home Screen | 
-| ![Home](screenshots/home.png) |
+![Home](screenshots/home.png)
 
 |-------------|
-| Calculation Page | 
-| ![Calculate](screenshots/calculate.png) |
+ 
+![Calculate](screenshots/calculate.png)
 
 |-------------|
-| About Page |
-|![About](screenshots/about.png) |
+
+![About](screenshots/about.png) 
 
 
 ## 🧑‍💻 Author
