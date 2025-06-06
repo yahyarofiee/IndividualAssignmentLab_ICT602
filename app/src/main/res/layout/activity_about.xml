@@ -17,7 +17,7 @@
             android:layout_height="?attr/actionBarSize"
             android:background="#4584A0"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:title="Yahya Investments"/>
+            app:title="Author's Information"/>
 
         <LinearLayout
             android:layout_width="match_parent"
